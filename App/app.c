@@ -30,6 +30,15 @@ uint8 flag3 = 0;
 char op;
 uint8 opPosition;
 
+
+
+/**
+ * @brief Manages the calculator application's functionality and user interaction.
+ * - Initializes the calculator, displaying the title on the LCD screen.
+ * - Listens for user input from a keypad to perform arithmetic operations.
+ * - Handles division by zero and floating-point division scenarios.
+ * - Allows the user to clear the calculator upon request.
+ */
 void Calculator(){
 	LCD_Init();
 	KEYPAD_init();
